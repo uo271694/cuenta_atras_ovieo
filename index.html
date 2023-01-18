@@ -5,32 +5,8 @@
         <title>Ovieo 2k23</title>
     </head>
     <body>
-        <div id="resultado">
-            
-        </div>
-        <div id="minuto">
+ <iframe src="https://free.timeanddate.com/countdown/i8ol9xrt/n3759/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcfff/tcfff/fs100/szw320/szh135/tatTime%20left%20to%20Event%20in/tac000/tptTime%20since%20Event%20started%20in/tpc000/mac000/mpc000/iso2023-02-10T00:00:00" allowtransparency="true" frameborder="0" width="180" height="69"></iframe>
 
-        </div>
-        <div id="segundo">
-
-        </div>
     </body>
-    <script type="text/javascript"> 
-        var final = moment("2023-02-10");
-        setInterval(function() {
-            var inicio = moment();
-            var duracion = final.diff(inicio);
-            var intervalo = moment(duracion);
-            var mes = intervalo.month()+1;
-            var diaDelMes = intervalo.date();
-            var hora = intervalo.hour();
-            var minuto = intervalo.minute();
-            var segundo = intervalo.second();
-            var resultado = (intervalo.format("MM/DD HH:mm:ss"));
-            $("#resultado").html(mes + " Meses " + diaDelMes + " Dias " + hora + " Horas " + minuto + " Minutos " + segundo + " Segundos");
-            $("#minuto").html(minuto);
-            $("#segundo").html(segundo);
-        }, 1000);
-        
-    </script>
+
 </html>
